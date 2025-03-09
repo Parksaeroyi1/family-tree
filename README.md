@@ -110,7 +110,7 @@ The project consists of two main files:
    ```javascript
    import { Person, FamilyTree } from './family.js';
 
-   // Sample Dataset
+   // Sample Dataset Here, we create instances of the Person class to represent individuals in the family.
    const john = new Person("John", '1950-01-01', 'Engineer');
    const jane = new Person("Jane", '1955-02-02', 'Doctor');
    const mike = new Person("Mike", '1975-03-03', 'Teacher');
@@ -118,7 +118,7 @@ The project consists of two main files:
    const kate = new Person("Kate", '2000-05-05', 'Student');
    const tom = new Person("Tom", '2005-06-06', 'Musician');
 
-   // Establish relationships
+   // Establish relationships The addChild method is used to establish parent-child relationships.
    john.addChild(mike);
    john.addChild(anna);
 
@@ -127,7 +127,8 @@ The project consists of two main files:
    mike.addChild(kate);
    mike.addChild(tom);
 
-   // Create family tree
+   // Create family tree A FamilyTree object is created to manage all the individuals in the family. The addMember method adds each Person object to the family tree.
+   
    const familyTree = new FamilyTree();
    familyTree.addMember(john);
    familyTree.addMember(jane);
@@ -136,7 +137,13 @@ The project consists of two main files:
    familyTree.addMember(kate);
    familyTree.addMember(tom);
 
+
    // Display descendants of a person with details
+   // This function displays the descendants of a given person.
+   // It uses the getDescendants method from the Person class to retrieve all descendants recursively.
+   //If the person has no children, it outputs "No children".
+   //Otherwise, it lists all descendants with their details (name, birthdate, and profession).
+
    function displayDescendants(person) {
        const descendants = person.getDescendants();
        console.log(`--- ${person.name} ---`);
@@ -154,6 +161,8 @@ The project consists of two main files:
    }
 
    // Display descendants for each person
+   //The displayDescendants function is called for each person in the family tree.
+   //This outputs the descendants of each individual to the console.
    displayDescendants(john);
    displayDescendants(jane);
    displayDescendants(mike);
