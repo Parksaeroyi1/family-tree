@@ -4,17 +4,6 @@ This application allows you to create and manage a family tree by defining indiv
 
 ---
 
-## Table of Contents
-
-1. [Prerequisites](#prerequisites)
-2. [Getting Started](#getting-started)
-3. [Project Structure](#project-structure)
-4. [Running the Application](#running-the-application)
-5. [Code Explanation](#code-explanation)
-6. [Enhancements](#enhancements)
-
----
-
 ## Prerequisites
 
 Before running the application, ensure you have the following installed:
