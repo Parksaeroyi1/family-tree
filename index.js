@@ -1,4 +1,3 @@
-// main.js
 import { Person, FamilyTree } from './family.js';
 
 // Sample Dataset
